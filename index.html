@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMS Production Server</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .container{
+            text-align:center;
+            background:#1e293b;
+            padding:40px;
+            border-radius:12px;
+            box-shadow:0 0 20px rgba(0,0,0,0.4);
+            width:90%;
+            max-width:700px;
+        }
+
+        .dummy-image{
+            width:100%;
+            max-width:500px;
+            height:auto;
+            border-radius:12px;
+            margin-bottom:25px;
+            border:3px solid #38bdf8;
+        }
+
+        h1{
+            font-size:42px;
+            margin-bottom:20px;
+            color:#38bdf8;
+        }
+
+        p{
+            font-size:18px;
+            margin-bottom:15px;
+            color:#cbd5e1;
+        }
+
+        .status{
+            display:inline-block;
+            padding:10px 20px;
+            border-radius:8px;
+            background:#22c55e;
+            color:white;
+            font-weight:bold;
+            margin-top:20px;
+        }
+
+        .footer{
+            margin-top:30px;
+            font-size:14px;
+            color:#94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Dummy Image -->
+        <img 
+            src="https://picsum.photos/800/400" 
+            alt="Dummy Image"
+            class="dummy-image"
+        >
+
+        <h1>HMS Production Server</h1>
+
+        <p>Welcome to the HMS 3-Tier Architecture Deployment</p>
+
+        <p>Application Load Balancer is working successfully.</p>
+
+        <div class="status">
+            Server Status: RUNNING
+        </div>
+
+        <div class="footer">
+            Powered by AWS EC2 + ALB + MySQL
+        </div>
+    </div>
+
+</body>
+</html>
